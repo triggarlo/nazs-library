@@ -41,7 +41,7 @@ export default function Layout({ children }) {
           }}
         >
           <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <img src={nazsLogo} alt="NAZS logo" style={{ height: '44px', width: '44px', objectFit: 'contain' }} />
+            <img src={nazsLogo} alt="NAZS logo" style={{ height: '48px', width: '48px', objectFit: 'contain' }} />
             <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
               <span className="eyebrow">NAZS &middot; Unilorin</span>
               <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', fontWeight: 600 }}>
