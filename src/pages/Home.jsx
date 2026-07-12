@@ -7,8 +7,10 @@ export default function Home() {
 
   return (
     <div style={{ padding: '2rem 0' }}>
-      <img src={nazsLogo} alt="NAZS logo" style={{ height: '96px', width: '96px', objectFit: 'contain', marginBottom: '1rem' }} />
-      <span className="eyebrow">National Association of Zoology Students &middot; Unilorin</span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginBottom: '0.5rem' }}>
+        <img src={nazsLogo} alt="NAZS logo" style={{ height: '40px', width: '40px', objectFit: 'contain', borderRadius: '50%' }} />
+        <span className="eyebrow">National Association of Zoology Students &middot; Unilorin</span>
+      </div>
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2.4rem', maxWidth: 620, margin: '0.5rem 0 1rem' }}>
         A shared collection, built by the department, for the department.
       </h1>
