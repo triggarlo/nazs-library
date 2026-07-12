@@ -1,5 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import nazsLogo from '../assets/nazs-logo.png'
 
 export default function Layout({ children }) {
   const { session, profile, signOut } = useAuth()
@@ -39,10 +40,13 @@ export default function Layout({ children }) {
             gap: '0.75rem',
           }}
         >
-          <Link to="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
-            <span className="eyebrow">NAZS &middot; Unilorin</span>
-            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', fontWeight: 600 }}>
-              Digital Library
+          <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <img src={nazsLogo} alt="NAZS logo" style={{ height: '44px', width: '44px', objectFit: 'contain' }} />
+            <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
+              <span className="eyebrow">NAZS &middot; Unilorin</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', fontWeight: 600 }}>
+                Digital Library
+              </span>
             </span>
           </Link>
 
